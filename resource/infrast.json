@@ -4,6 +4,18 @@
     ],
     "Mfg": {
         "Mfg_Doc": "制造站",
+        "products": [
+            {
+                "id:": "CombatRecord",
+                "name": "作战记录",
+                "template": "InfrastMfgDogFoodFlag.png"
+            },
+            {
+                "id": "PureGold",
+                "name": "赤金",
+                "template": "InfrastMfgPureGoldFlag.png"
+            }
+        ],
         "skills_Doc": "技能ID默认就是模板名（不带.png），name和intro实际都不产生作用，给人看的",
         "skills": [
             {
@@ -11,7 +23,10 @@
                     "咪波·制造型"
                 ],
                 "intro": "进驻制造站时，生产力+30%",
-                "template": "Bskill_man_spd3.png"
+                "template": "Bskill_man_spd3.png",
+                "efficient": {
+                    "all": 30
+                }
             },
             {
                 "name": [
@@ -20,7 +35,10 @@
                     "红松骑士团·β"
                 ],
                 "intro": "进驻制造站时，生产力+25%",
-                "template": "Bskill_man_spd2.png"
+                "template": "Bskill_man_spd2.png",
+                "efficient": {
+                    "all": 25
+                }
             },
             {
                 "name": [
@@ -30,7 +48,10 @@
                     "磐蟹·豆豆"
                 ],
                 "intro": "进驻制造站时，生产力+15%",
-                "template": "Bskill_man_spd1.png"
+                "template": "Bskill_man_spd1.png",
+                "efficient": {
+                    "all": 15
+                }
             },
             {
                 "name": [
@@ -44,7 +65,10 @@
                     "配合意识"
                 ],
                 "intro": "进驻制造站时，当前制造站内其他干员提供的每5%生产力（不包含根据设施数量提供加成的生产力），额外提供5%生产力，最多提供40%生产力",
-                "template": "Bskill_man_spd_variable21.png"
+                "template": "Bskill_man_spd_variable21.png",
+                "efficient": {
+                    "all": 40
+                }
             },
             {
                 "name": [
@@ -80,7 +104,10 @@
                     "延时摄影"
                 ],
                 "intro": "进驻制造站后，生产力首小时+15%，此后每小时+2%，最终达到+25%",
-                "template": "Bskill_man_spd_add2.png"
+                "template": "Bskill_man_spd_add2.png",
+                "efficient": {
+                    "all": 23
+                }
             },
             {
                 "name": [
@@ -88,14 +115,20 @@
                     "“等不及”"
                 ],
                 "intro": "进驻制造站后，生产力首小时+20%，此后每小时+1%，最终达到+25%",
-                "template": "Bskill_man_spd_add1.png"
+                "template": "Bskill_man_spd_add1.png",
+                "efficient": {
+                    "all": 24
+                }
             },
             {
                 "name": [
                     "再生能源"
                 ],
                 "intro": "进驻制造站时，每个贸易站为当前制造站贵金属类配方的生产力+20%",
-                "template": "Bskill_man_spd&trade.png"
+                "template": "Bskill_man_spd&trade.png",
+                "efficient": {
+                    "PureGold_Reg": "[NumOfTrade] * 20"
+                }
             },
             {
                 "name": [
@@ -123,14 +156,20 @@
                     "仓库整备·β"
                 ],
                 "intro": "进驻制造站时，仓库容量上限+10，生产力+10%",
-                "template": "Bskill_man_spd&limit3.png"
+                "template": "Bskill_man_spd&limit3.png",
+                "efficient": {
+                    "all": 10
+                }
             },
             {
                 "name": [
                     "仓库整备·α"
                 ],
                 "intro": "进驻制造站时，仓库容量上限+6，生产力+10%",
-                "template": "Bskill_man_spd&limit1.png"
+                "template": "Bskill_man_spd&limit1.png",
+                "efficient": {
+                    "all": 10
+                }
             },
             {
                 "name": [
@@ -145,7 +184,10 @@
                     "麻烦制造者"
                 ],
                 "intro": "进驻制造站时，生产力+25%，仓库容量上限-12，心情每小时消耗+0.25",
-                "template": "Bskill_man_spd&limit&cost3.png"
+                "template": "Bskill_man_spd&limit&cost3.png",
+                "efficient": {
+                    "all": 24.9
+                }
             },
             {
                 "name": [
@@ -215,35 +257,50 @@
                     "金属工艺·β"
                 ],
                 "intro": "进驻制造站时，贵金属类配方的生产力+35%",
-                "template": "Bskill_man_gold2.png"
+                "template": "Bskill_man_gold2.png",
+                "efficient": {
+                    "PureGold": 35
+                }
             },
             {
                 "name": [
                     "金属工艺·α"
                 ],
                 "intro": "进驻制造站时，贵金属类配方的生产力+30%",
-                "template": "Bskill_man_gold1.png"
+                "template": "Bskill_man_gold1.png",
+                "efficient": {
+                    "PureGold": 30
+                }
             },
             {
                 "name": [
                     "拳术指导录像"
                 ],
                 "intro": "进驻制造站时，作战记录类配方的生产力+35%",
-                "template": "Bskill_man_exp3.png"
+                "template": "Bskill_man_exp3.png",
+                "efficient": {
+                    "CombatRecord": 35
+                }
             },
             {
                 "name": [
                     "作战指导录像"
                 ],
                 "intro": "进驻制造站时，作战记录类配方的生产力+30%",
-                "template": "Bskill_man_exp2.png"
+                "template": "Bskill_man_exp2.png",
+                "efficient": {
+                    "CombatRecord": 30
+                }
             },
             {
                 "name": [
                     "胜利之计"
                 ],
                 "intro": "进驻制造站时，作战记录类配方的生产力+25%",
-                "template": "Bskill_man_exp1.png"
+                "template": "Bskill_man_exp1.png",
+                "efficient": {
+                    "CombatRecord": 25
+                }
             },
             {
                 "name": [
@@ -273,9 +330,46 @@
                 "intro": "进驻制造站时，消除当前制造站内所有干员自身心情消耗的影响",
                 "template": "Bskill_man_cost_all.png"
             }
+        ],
+        "skillsComb_Doc": "相关组合参考https://bbs.nga.cn/read.php?tid=25965441",
+        "skillsComb": [
+            {
+                "intro": "红云组",
+                "necessary": [
+                    {
+                        "intro": "红云-1",
+                        "skills": [
+                            "Bskill_man_spd_variable11",
+                            "Bskill_man_limit&cost1"
+                        ],
+                        "efficient": {
+                            "all": 16
+                        }
+                    }
+                ],
+                "optional": [
+                    {
+                        "intro": "稀音-2",
+                        "skills": [
+                            "Bskill_man_spd_add2",
+                            "Bskill_man_exp&limit1"
+                        ],
+                        "efficient": {
+                            "CombatRecord": 47
+                        }
+                    }
+                ]
+            }
         ]
     },
     "Trade": {
+        "products": [
+            {
+                "id:": "Money",
+                "name": "龙门币",
+                "template": "InfrastTradeMoneyFlag.png"
+            }
+        ],
         "skills": [
             {
                 "name": [
@@ -289,28 +383,40 @@
                     "订单流可视化·α"
                 ],
                 "intro": "进驻贸易站时，订单获取效率+5%，每有4条赤金生产线，则赤金生产线额外+2",
-                "template": "Bskill_tra_flow_gc1.png"
+                "template": "Bskill_tra_flow_gc1.png",
+                "efficient": {
+                    "all": 5
+                }
             },
             {
                 "name": [
                     "订单流可视化·β"
                 ],
                 "intro": "进驻贸易站时，订单获取效率+5%，每有2条赤金生产线，则赤金生产线额外+2",
-                "template": "Bskill_tra_flow_gc2.png"
+                "template": "Bskill_tra_flow_gc2.png",
+                "efficient": {
+                    "all": 5
+                }
             },
             {
                 "name": [
                     "物流规划·α"
                 ],
                 "intro": "进驻贸易站时，订单获取效率+5%，每有4条赤金生产线，则当前贸易站订单获取效率额外+15%",
-                "template": "Bskill_tra_flow_gs1.png"
+                "template": "Bskill_tra_flow_gs1.png",
+                "efficient": {
+                    "all": 5
+                }
             },
             {
                 "name": [
                     "物流规划·β"
                 ],
                 "intro": "进驻贸易站时，订单获取效率+5%，每有2条赤金生产线，则当前贸易站订单获取效率额外+15%",
-                "template": "Bskill_tra_flow_gs2.png"
+                "template": "Bskill_tra_flow_gs2.png",
+                "efficient": {
+                    "all": 5
+                }
             },
             {
                 "name": [
@@ -366,84 +472,120 @@
                     "交际"
                 ],
                 "intro": "进驻贸易站时，订单获取效率+30%，心情每小时消耗-0.25",
-                "template": "Bskill_tra_spd&cost.png"
+                "template": "Bskill_tra_spd&cost.png",
+                "efficient": {
+                    "all": 30
+                }
             },
             {
                 "name": [
                     "虔诚筹款·α"
                 ],
                 "intro": "进驻贸易站时，每间宿舍每级+1%获取效率",
-                "template": "Bskill_tra_spd&dorm1.png"
+                "template": "Bskill_tra_spd&dorm1.png",
+                "efficient": {
+                    "all": 20
+                }
             },
             {
                 "name": [
                     "虔诚筹款·β"
                 ],
                 "intro": "进驻贸易站时，每间宿舍每级+2%获取效率",
-                "template": "Bskill_tra_spd&dorm2.png"
+                "template": "Bskill_tra_spd&dorm2.png",
+                "efficient": {
+                    "all": 40
+                }
             },
             {
                 "name": [
                     "订单管理·α"
                 ],
                 "intro": "进驻贸易站时，订单获取效率+10%，且订单上限+2",
-                "template": "Bskill_tra_spd&limit1.png"
+                "template": "Bskill_tra_spd&limit1.png",
+                "efficient": {
+                    "all": 10
+                }
             },
             {
                 "name": [
                     "订单管理·β"
                 ],
                 "intro": "进驻贸易站时，订单获取效率+10%，且订单上限+4",
-                "template": "Bskill_tra_spd&limit2.png"
+                "template": "Bskill_tra_spd&limit2.png",
+                "efficient": {
+                    "all": 10
+                }
             },
             {
                 "name": [
                     "喀兰贸易·α"
                 ],
                 "intro": "进驻贸易站时，订单获取效率+15%，且订单上限+2",
-                "template": "Bskill_tra_spd&limit3.png"
+                "template": "Bskill_tra_spd&limit3.png",
+                "efficient": {
+                    "all": 15
+                }
             },
             {
                 "name": [
                     "喀兰贸易·β"
                 ],
                 "intro": "进驻贸易站时，订单获取效率+15%，且订单上限+4",
-                "template": "Bskill_tra_spd&limit4.png"
+                "template": "Bskill_tra_spd&limit4.png",
+                "efficient": {
+                    "all": 15
+                }
             },
             {
                 "name": [
                     "喀兰之主"
                 ],
                 "intro": "进驻贸易站时，订单获取效率+20%，且订单上限+4",
-                "template": "Bskill_tra_spd&limit5.png"
+                "template": "Bskill_tra_spd&limit5.png",
+                "efficient": {
+                    "all": 20
+                }
             },
             {
                 "name": [
                     "供应管理"
                 ],
                 "intro": "进驻贸易站时，订单获取效率+25%，且订单上限+1",
-                "template": "Bskill_tra_spd&limit6.png"
+                "template": "Bskill_tra_spd&limit6.png",
+                "efficient": {
+                    "all": 25
+                }
             },
             {
                 "name": [
                     "使命必达"
                 ],
                 "intro": "进驻贸易站时，订单获取效率+30%，且订单上限+1",
-                "template": "Bskill_tra_spd&limit7.png"
+                "template": "Bskill_tra_spd&limit7.png",
+                "efficient": {
+                    "all": 30
+                }
             },
             {
                 "name": [
                     "天道酬勤·α"
                 ],
                 "intro": "进驻贸易站时，当前贸易站内干员提供的每5%订单获取效率，额外提供5%效率，最多提供25%效率",
-                "template": "Bskill_tra_spd_variable21.png"
+                "template": "Bskill_tra_spd_variable21.png",
+                "efficient": {
+                    "all": 25
+                }
             },
             {
                 "name": [
                     "天道酬勤·β"
                 ],
                 "intro": "进驻贸易站时，当前贸易站内干员提供的每5%订单获取效率，额外提供5%效率，最多提供35%效率",
-                "template": "Bskill_tra_spd_variable22.png"
+                "template": "Bskill_tra_spd_variable22.png",
+                "efficient": {
+                    "all": 35
+                }
             },
             {
                 "name": [
@@ -452,7 +594,10 @@
                     "订单分发·α"
                 ],
                 "intro": "进驻贸易站时，订单获取效率+20%",
-                "template": "Bskill_tra_spd1.png"
+                "template": "Bskill_tra_spd1.png",
+                "efficient": {
+                    "all": 20
+                }
             },
             {
                 "name": [
@@ -460,14 +605,20 @@
                     "订单分发·β"
                 ],
                 "intro": "进驻贸易站时，订单获取效率+30%",
-                "template": "Bskill_tra_spd2.png"
+                "template": "Bskill_tra_spd2.png",
+                "efficient": {
+                    "all": 30
+                }
             },
             {
                 "name": [
                     "物流专家"
                 ],
                 "intro": "进驻贸易站时，订单获取效率+35%",
-                "template": "Bskill_tra_spd3.png"
+                "template": "Bskill_tra_spd3.png",
+                "efficient": {
+                    "all": 35
+                }
             },
             {
                 "name": [
